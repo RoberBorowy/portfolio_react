@@ -1,0 +1,156 @@
+.skills {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    background-image: url(/src/components/assets/background-image-skills.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+
+.skills::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.673);
+
+}
+
+
+.skills-content {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.skills-title {
+    margin-right: 25%;
+    z-index: 2;
+
+}
+
+.skills-title span {
+    display: block;
+    margin-bottom: 2rem;
+    font-size: var(--fnt-size-big);
+    opacity: .4;
+    color: #ffffff;
+}
+
+
+.skills-description {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--fnt-size);
+    font-family: 'Short Stack', cursive;
+    z-index: 100;
+    color: white;
+    text-shadow: var(--txt-shadow);
+
+}
+
+
+
+.skills-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+    transition: .4s;
+    animation: showSubtitle 3s ease;
+}
+
+.img {
+    font-size: var(--fnt-size-icon);
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes showSubtitle {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+
+
+    }
+
+}
+
+
+@media (max-width:378px) {
+    .skills-title {
+        margin-top: -3rem;
+
+    }
+
+
+    .ikon-title {
+        font-size: .7rem;
+    }
+
+    .img {
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width:1000px) {
+
+
+    .skills-content {
+
+        width: 80%;
+        flex-direction: column;
+        margin: 0 auto;
+
+
+    }
+
+    .skills-title {
+        margin-top: 2rem;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .skills-title span {
+        display: inline-block;
+        padding: 1rem;
+    }
+
+
+    .skills-description {
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 auto;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .skills-icon {
+        margin: 0 auto;
+
+
+    }
+}

@@ -1,0 +1,132 @@
+.contact {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.contact-form {
+    width: 40%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 123;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.contact-form h1 {
+    color: white;
+    text-shadow: var(--txt-shadow);
+}
+
+.contact-form input {
+    width: 70%;
+    padding: 15px;
+    margin-block: .3rem;
+    outline: none;
+    color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid white;
+    background: none;
+}
+
+.contact-form .submit {
+    width: 20%;
+    cursor: pointer;
+    transition: .3s;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.contact-form .submit:hover {
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}
+
+.contact-form textarea {
+    width: 70%;
+    padding: 15px;
+    margin-block: .3rem;
+    font-family: "Poppins",
+        sans-serif;
+    background: none;
+    color: white;
+    border: 1px solid white;
+
+}
+
+.contact-form textarea,
+input::placeholder {
+    color: white;
+}
+
+.contact-form textarea,
+input::placeholder:focus {
+    background: none;
+}
+
+.send {
+    visibility: hidden;
+    color: red;
+    font-size: 24px;
+}
+
+.send-active {
+    visibility: visible;
+    color: red;
+    font-size: 24px;
+
+}
+
+.modal {
+
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(0, 0, 0);
+}
+
+
+
+
+
+@media (max-width:1000px) {
+
+
+    .contact-form {
+        width: 70%;
+    }
+
+    .contact-form h1 {
+        font-size: 1.2rem;
+    }
+
+
+    .contact input,
+    textarea {
+        margin-block: .5rem;
+
+    }
+
+    .contact-form .submit {
+        width: 40%;
+        cursor: pointer;
+        transition: .3s;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+
+}

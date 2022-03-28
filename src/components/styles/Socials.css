@@ -1,0 +1,41 @@
+.socials {
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: upAndDownY 1s ease-in-out;
+    animation-delay: .2s;
+
+}
+
+
+.social-ikon .social {
+    width: 2rem;
+    height: 2rem;
+    color: white;
+    margin: 1rem;
+    cursor: pointer;
+    text-shadow: var(--txt-shadow);
+    transition: .3s;
+    opacity: 0;
+    animation: showLetter 1s infinite;
+
+
+}
+
+
+
+@keyframes upAndDownY {
+    0% {
+
+      
+        opacity: 0;
+
+    }
+
+    100% {
+    
+        opacity: 1;
+
+    }
+}

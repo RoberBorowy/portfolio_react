@@ -1,0 +1,24 @@
+.home-button {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 100000;
+}
+
+.home-button .icon {
+    color: white;
+    font-size: 50px;
+    background-color: transparent;
+    transition: .3s;
+
+}
+
+.home-button .icon:hover {
+    filter: drop-shadow(0 0 2px #0fa) drop-shadow(0 0 5px #0fa)drop-shadow(0 0 15px #0fa);
+}
